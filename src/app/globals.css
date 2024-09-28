@@ -9,23 +9,20 @@ body {
 
 @keyframes gradientBackground {
     0% {
-        background-position: 25%;
+        background-position: 0% 50%;
     }
-    /*25% {*/
-    /*    background-position: 50% 100%;*/
-    /*}*/
     50% {
-        background-position: 25% 75%;
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 75% 100%;
+        background-position: 0% 50%;
     }
 }
 
 .gradient-text {
-    background: linear-gradient(270deg, #FFFF00, #FF00FF, #FFFF00, #FF00FF);
-    background-size: 600% 600%;
+    background: linear-gradient(270deg, #0000FF, #0000FF, #FFFF00, #800080, #800080);
+    background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradientBackground 5s forwards infinite;
+    animation: gradientBackground 5s ease infinite;
 }

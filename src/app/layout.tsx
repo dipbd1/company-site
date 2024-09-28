@@ -20,7 +20,6 @@ export default function RootLayout({
             className={`antialiased bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500`}
         >
         <Header/>
-        <Hero/>
         {children}
         </body>
         </html>
