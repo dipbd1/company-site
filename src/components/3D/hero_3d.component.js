@@ -1,5 +1,5 @@
 "use client"
-import {Canvas} from '@react-three/fiber';
+import {Canvas, useThree} from '@react-three/fiber';
 import {Suspense, useEffect} from 'react';
 import {useGLTF, OrbitControls, Html, useAnimations, useTexture} from '@react-three/drei';
 import {Hero3DModel} from "@/components/3D/hero_3d.model";
@@ -33,10 +33,20 @@ const Model = ({url, textureUrl}) => {
 };
 
 // Fallback component (e.g., spinner)
-const Loader = () =>
-    <Html>
+const Loader = () => {
+    return <Html>
         <div>Loading 3D model...</div>
-    </Html>;
+    </Html>
+};
+
+const SetCamera = () => {
+    const {camera} = useThree();
+    useEffect(() => {
+        camera.position.set(2, 3, 1); // Set initial camera position
+        camera.lookAt(0, 0, 0); // Set initial camera target
+    }, [camera]);
+    return null;
+};
 
 // Main component rendering the model lazily
 const Hero3DComponent = () => (
@@ -46,13 +56,12 @@ const Hero3DComponent = () => (
                 <ambientLight/>
                 <directionalLight position={[10, 10, 5]} intensity={1}/>
                 <Hero3DModel/>
+                <SetCamera/>
                 <OrbitControls
                     autoRotate
                     autoRotateSpeed={6.0}
                     minDistance={2.8}
                     maxDistance={2.8}
-                    maxPolarAngle={Math.PI / 2}
-                    minPolarAngle={Math.PI / 3}
                 />
             </Suspense>
         </Canvas>
