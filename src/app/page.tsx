@@ -1,5 +1,9 @@
 import Hero from "@/components/hero/hero";
 import Services from "@/components/services";
+import data from "@/config/site-data.en";
+
+
+
 
 export default function Home() {
   return (
@@ -8,6 +12,14 @@ export default function Home() {
         <Hero/>
       </main>
         <Services/>
+        {/* {Services.map(serv =>
+          (
+            <Services key={serv} />
+          )
+        )} */}
+
+
+
       <footer className="">
       </footer>
     </div>

@@ -21,13 +21,14 @@ const data = {
       category: "Development",
     },
     {
-      name: "Performance Optimization",
+      title: "Performance Optimization",
       description:
         "Improve application speed and efficiency by our advanced techniques. We have high experienced engineers and team of experts.",
       category: "Optimization",
     },
     {
       title: "SEO",
+      category: "Development",
       description:
         "Like performance optimization, UI/UX design we focus on search engine optimization (SEO) for your website. Which helps your website to appear higher in search results.",
     },
