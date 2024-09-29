@@ -54,7 +54,7 @@ const Services = ()=> {
                             <svg className="w-16 h-16 fill-gray-400 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm0-18.5c-4.254 0-7.699 3.445-7.699 7.699 0 4.254 3.445 7.699 7.699 7.699 4.254 0 7.699-3.445 7.699-7.699 0-4.254-3.445-7.699-7.699-7.699zm0 13.398c-3.14 0-5.699-2.559-5.699-5.699s2.559-5.699 5.699-5.699 5.699 2.559 5.699 5.699-2.559 5.699-5.699 5.699z"/>
                             </svg>
-                                <h3 className="mt-8 text-lg font-semibold text-black group-hover:text-white ">
+                                <h3 className="mt-8 text-3xl font-semibold text-black group-hover:text-white ">
                                     {services.title}
                                 </h3>
                                 <p className="text-black">{services.description}</p>
