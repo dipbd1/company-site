@@ -12,15 +12,15 @@ const Hero = () => {
 
     return (
         <>
-            <div className="relative bg-transparent pb-[110px] pt-[120px] dark:bg-dark lg:pt-[150px]">
+            <div className="relative bg-transparent pb-[110px] pt-[40px] md:pt-[104px] dark:bg-dark lg:pt-[120px]">
                 <div className="container mx-auto">
                     <div className="mx-4 flex flex-wrap">
                         <div className="w-full px-4 lg:w-5/12">
                             <div className="hero-content">
-                                <h1 className="mb-5 text-4xl font-bold !leading-[1.208] text-dark dark:text-white sm:text-[42px] lg:text-[40px] xl:text-5xl gradient-text">
+                                <h1 className="mb-5 text-4xl font-bold !leading-[1] text-dark dark:text-white sm:text-[48px] lg:text-[56px] xl:text-6xl gradient-text">
                                     {data.hero.title}
                                 </h1>
-                                <p className="mb-8 max-w-[480px] text-2xl dark:text-dark-6 text-yellow-300">
+                                <p className="mb-8 max-w-[480px] text-xl dark:text-dark-6 text-yellow-300">
                                     {data.hero.subtitle}
                                 </p>
                             </div>
