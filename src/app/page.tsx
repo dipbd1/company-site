@@ -1,5 +1,7 @@
+import Carousel from "@/components/carousel/carousel";
 import Hero from "@/components/hero/hero";
 import Services from "@/components/services";
+
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
             <Services key={serv} />
           )
         )} */}
+      
+      <Carousel />
 
 
 

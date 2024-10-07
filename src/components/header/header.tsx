@@ -22,7 +22,10 @@ export default function Header() {
                     Menu
                 </button>
             </div>
-            <nav className={`flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 ${isDropdownOpen ? 'flex' : 'hidden'} md:flex text-black`}>
+            {/* <nav className={`flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 ${isDropdownOpen ? 'flex' : 'hidden'} md:flex text-black shadow-lg p-2`}> */}
+            <nav className={`flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 ${isDropdownOpen ? 'flex' : 'hidden'} md:flex text-black p-2`} 
+                    style={{ boxShadow: '0 4px 4px -2px rgba(0, 0, 0, 0.1)' }}>
+
                 <Link
                     href="/"
                     className="text-sm font-medium text-muted-foreground hover:text-primary">
