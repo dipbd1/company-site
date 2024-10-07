@@ -1,9 +1,5 @@
 import Hero from "@/components/hero/hero";
 import Services from "@/components/services";
-import data from "@/config/site-data.en";
-
-
-
 
 export default function Home() {
   return (

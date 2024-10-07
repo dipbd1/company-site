@@ -10,7 +10,7 @@ export default function Header() {
     return (
         <header className="flex flex-col md:flex-row items-center justify-between px-6 py-4 bg-background">
             <div className="flex items-center mb-4 md:mb-0">
-                <Link href="/" className="text-2xl font-bold text-primary">
+                <Link href="/" className="text-2xl font-bold text-black">
                     {data.company.name}
                 </Link>
             </div>
@@ -22,7 +22,7 @@ export default function Header() {
                     Menu
                 </button>
             </div>
-            <nav className={`flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 ${isDropdownOpen ? 'flex' : 'hidden'} md:flex`}>
+            <nav className={`flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 ${isDropdownOpen ? 'flex' : 'hidden'} md:flex text-black`}>
                 <Link
                     href="/"
                     className="text-sm font-medium text-muted-foreground hover:text-primary">
